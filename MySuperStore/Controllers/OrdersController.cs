@@ -93,6 +93,7 @@ namespace MySuperStore.Controllers
             return View(model);
         }
 
+
         // GET: /Orders/Details/5
         public async Task<IActionResult> Details(int id)
         {
