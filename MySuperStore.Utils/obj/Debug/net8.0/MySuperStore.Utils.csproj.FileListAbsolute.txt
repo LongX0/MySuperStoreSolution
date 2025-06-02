@@ -9,3 +9,15 @@ C:\Users\Mansur\source\repos\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Ut
 C:\Users\Mansur\source\repos\MySuperStore.Utils\obj\Debug\net8.0\refint\MySuperStore.Utils.dll
 C:\Users\Mansur\source\repos\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.pdb
 C:\Users\Mansur\source\repos\MySuperStore.Utils\obj\Debug\net8.0\ref\MySuperStore.Utils.dll
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\bin\Debug\net8.0\MySuperStore.Utils.deps.json
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\bin\Debug\net8.0\MySuperStore.Utils.dll
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\bin\Debug\net8.0\MySuperStore.Utils.pdb
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.AssemblyInfoInputs.cache
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.AssemblyInfo.cs
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.sourcelink.json
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.dll
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\refint\MySuperStore.Utils.dll
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\MySuperStore.Utils.pdb
+C:\Users\Mansur\Source\Repos\helo\MySuperStore.Utils\obj\Debug\net8.0\ref\MySuperStore.Utils.dll
