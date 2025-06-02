@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MySuperStore.Models.Customers.CustomerListViewModel>
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<h2>Customers</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">+ Add Customer</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th style="width:200px">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.Name</td>
+                <td>@customer.Email</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@customer.Id" class="btn btn-info btn-sm">Details</a>
+                    <a asp-action="Edit" asp-route-id="@customer.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal-@customer.Id">Delete</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="deleteModal-@customer.Id" tabindex="-1" aria-labelledby="deleteModalLabel-@customer.Id" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="deleteModalLabel-@customer.Id">Delete Confirmation</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to delete customer "<strong>@customer.Name</strong>"?
+                                </div>
+                                <div class="modal-footer">
+                                    <form asp-action="Delete" method="post">
+                                        <input type="hidden" name="id" value="@customer.Id" />
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

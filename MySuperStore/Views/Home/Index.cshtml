@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Welcome to MySuperStore";
+}
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Welcome to <span class="text-primary">MySuperStore</span> 🛒</h1>
+        <p class="lead text-muted">Manage customers, orders and products easily and efficiently.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body text-center">
+                    <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">Customers</h5>
+                    <p class="card-text">View, create, and manage your customers.</p>
+                    <a class="btn btn-outline-primary" asp-controller="Customers" asp-action="Index">Manage Customers</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body text-center">
+                    <i class="bi bi-bag-check-fill display-4 text-success mb-3"></i>
+                    <h5 class="card-title">Orders</h5>
+                    <p class="card-text">Create and review customer orders and totals.</p>
+                    <a class="btn btn-outline-success" asp-controller="Orders" asp-action="Index">View Orders</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body text-center">
+                    <i class="bi bi-box-seam display-4 text-warning mb-3"></i>
+                    <h5 class="card-title">Products</h5>
+                    <p class="card-text">Add and update product details like price and stock.</p>
+                    <a class="btn btn-outline-warning" asp-controller="Products" asp-action="Index">Browse Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

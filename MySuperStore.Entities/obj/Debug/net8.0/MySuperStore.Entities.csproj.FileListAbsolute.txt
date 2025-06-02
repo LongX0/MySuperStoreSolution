@@ -1,0 +1,11 @@
+C:\Users\Mansur\source\repos\MySuperStore.Entities\bin\Debug\net8.0\MySuperStore.Entities.deps.json
+C:\Users\Mansur\source\repos\MySuperStore.Entities\bin\Debug\net8.0\MySuperStore.Entities.dll
+C:\Users\Mansur\source\repos\MySuperStore.Entities\bin\Debug\net8.0\MySuperStore.Entities.pdb
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\MySuperStore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\MySuperStore.Entities.AssemblyInfoInputs.cache
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\MySuperStore.Entities.AssemblyInfo.cs
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\MySuperStore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\MySuperStore.Entities.dll
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\refint\MySuperStore.Entities.dll
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\MySuperStore.Entities.pdb
+C:\Users\Mansur\source\repos\MySuperStore.Entities\obj\Debug\net8.0\ref\MySuperStore.Entities.dll

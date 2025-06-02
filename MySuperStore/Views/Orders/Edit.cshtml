@@ -1,0 +1,34 @@
+﻿@using MySuperStore.Utils
+@model MySuperStore.Models.Orders.OrderCreateViewModel
+@{
+    var customers = ViewBag.Customers as List<MySuperStore.Entities.Models.Customer>;
+    var products = ViewBag.Products as List<MySuperStore.Entities.Models.Product>;
+    var orderId = ViewBag.OrderId;
+}
+
+<h2>Edit Order</h2>
+<form asp-action="Edit" asp-route-id="@orderId" method="post">
+    <div class="form-group">
+        <label>Customer</label>
+        <select asp-for="CustomerId" asp-items="@(new SelectList(customers, "Id", "Name"))" class="form-control">
+            <option value="">-- Select Customer --</option>
+        </select>
+    </div>
+
+    <h4>Products</h4>
+    @foreach (var product in products)
+    {
+        var isSelected = Model.ProductIds.Contains(product.Id);
+        var quantity = Model.Quantities.ContainsKey(product.Id) ? Model.Quantities[product.Id] : 1;
+        <div class="form-group form-check">
+            <input type="checkbox" name="ProductIds" value="@product.Id" class="form-check-input" id="prod_@product.Id" @(isSelected ? "checked" : "") />
+            <label class="form-check-label" for="prod_@product.Id">
+                @product.Name (@TotalCalculator.ToCurrency(product.Price))
+            </label>
+            <input type="number" name="Quantities[@product.Id]" value="@quantity" class="form-control d-inline-block" style="width:80px; margin-left:10px;" min="1" />
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
